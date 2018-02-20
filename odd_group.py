@@ -3,13 +3,9 @@
 #In general, the kth group contains the next k elements of the sequence. Given k, find the sum of the elements of the kth group.	
 		
 k = int(input())
- 
-# computing the first number in the kth group
-first = int((k * (k - 1)) + 1) 
- 
-# finding the sum.
+first = int((k * (k - 1)) + 1)  # computing the first number in the kth group 
 sum = 0
-while k:
+while k:         # finding the sum.
     sum += first
     first += 2
     k=k-1
